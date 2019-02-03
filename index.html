@@ -52,13 +52,33 @@
 				</a>
 			</p>
 		</footer>
-
 		<section class="modal modal-search">
-			<p>дата заезда:</p>
-			<p>дата выезда:</p>
-			<p>взрослые:</p>
-			<p>дети:</p>
-			<a class="button button-search" href="#">Найти</a>
+			<h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+			<form class="hotel-form" action="https://echo.htmlacademy.ru" method="post">
+				<p class="hotel-item">
+					<label for="hotel-date-in">Дата заезда:</label>
+					<input id="hotel-date-in" type="text" name="date-in" value="" placeholder="24 апреля 2017">
+				</p>
+				<p class="hotel-item">
+					<label for="hotel-date-out">Дата выезда:</label>
+					<input id="hotel-date-out" type="text" name="date-out" value="" placeholder="4 июля 2017">
+				</p>
+				<p class="hotel-item">
+					<label for="hotel-number-adult">Взрослые:</label>
+					<input type="button" value="-"></input>
+					<input id="hotel-number-adult" type="text" name="adult" value="" placeholder="4">
+					<input type="button" value="+"></input>
+				</p>
+				<p class="hotel-item">
+					<label for="hotel-number-children">Дети:</label>
+					<input type="button" value="-"></input>
+					<input id="hotel-number-children" type="text" name="children" value="" placeholder="2">
+					<input type="button" value="+"></input>
+				</p>
+				<button class="button button-search" type="submit">Найти</button>
+			</form>
 		</section>		
 	</body>
 </html>
+
+
