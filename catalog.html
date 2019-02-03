@@ -20,8 +20,58 @@
 		</header>
 		<main class="container">
 			<section class="filter">
-			<!--фильтр форма -->
+				<h2 class="visually-hidden">Фильтр поиска</h2>
+				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+					<fieldset>
+						<legend>Инфраструктура:</legend>
+						<ul class="filter-infrastructure">
+							<li class="infrastructure-item">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+								<label for="filter-pool">Бассейн
+								</label>
+							</li>
+							<li class="infrastructure-item">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+								<label for="filter-parking">Парковка
+								</label>
+							</li>
+							<li class="infrastructure-item">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="internet" id="filter-internet">
+								<label for="filter-internet">Wi-Fi
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Тип жилья:</legend>
+						<ul class="filter-housing">
+							<li class="housing-item">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+								<label for="filter-hotel">Гостиница
+								</label>
+							</li>
+							<li class="housing-item">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+								<label for="filter-motel">Мотель
+								</label>
+							</li>
+							<li class="housing-item">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
+								<label for="filter-apartment">Апартаменты
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Стоимость в сутки (р):</legend>
+						<!--фильтр-->
+					</fieldset>					
+					<button type="submit" class="filter-total">Показать</button>
+				</form>
 			</section>
+			<div>
+			<!--итог поиска-->
+			</div>
 			<section class="result-search">
 			<h2 class="visually-hidden">Результат поиска</h2>
 				<div class="catalog-list">
