@@ -10,15 +10,17 @@
 	<body class="inner-page">
 		<header class="main-header">
 			<nav class="main-navigation">
-				<a class="main-header-logo" href="index.html">
-					<img src="img/logo.png" width="140" height="71" alt="Логотип SEDONA">
-				</a>
-				<ul class="site-navigation">
-					<li><a href="info.html">Информация</a></li>
-					<li><a href="foto.html">Фото и видео</a></li>
-					<li><a href="map.html">Карта штата</a></li>
-					<li><a href="catalog.html">Гостиницы</a></li>
-				</ul>
+				<div class="main-navigation-wrapper">
+					<a class="main-header-logo" href="index.html">
+						<img src="img/logo.png" width="140" height="71" alt="Логотип SEDONA">
+					</a>
+					<ul class="site-navigation">
+						<li class="site-navigation-item"><a href="info.html">Информация</a></li>
+						<li class="site-navigation-item"><a href="foto.html">Фото и видео</a></li>
+						<li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
+						<li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
+					</ul>
+				</div>
 			</nav>
 		</header>
 		<main class="container">
@@ -72,8 +74,28 @@
 					<button type="submit" class="filter-total">Показать</button>
 				</form>
 			</section>
-			<div>
-			<!--итог поиска-->
+			<div class="sorting-name">
+				<h3>Найдено: 3</h3>
+				<div class="sorting">
+				<p class="sorting">Сортировка:</p>
+					<ul class="sorting-item">
+						<li>
+							<a class="sort-element" href="price.html">По цене</a>
+						</li>
+						<li>
+							<a class="sort-element" href="type.html">По типу</a>
+						</li>
+						<li>
+							<a class="sort-element" href="name.html">По названию</a>
+						</li>
+						<li>
+							<a class="sort-element button-sort button-sort-down" href="sort.html">Вверх</a>
+						</li>
+						<li>
+							<a class="sort-element button-sort button-sort-up" href="sort.html">Вниз</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<section class="result-search">
 			<h2 class="visually-hidden">Результат поиска</h2>
@@ -146,20 +168,22 @@
 			</section>
 		</main>
 		<footer class="main-footer">
-			<b>#visitsedona</b>
-			<div class="footer-social">
-				<ul>
-					<li><a class="social-button" href="#">Вконтакте</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
-				</ul>
+			<div class="wrapper-footer">
+				<b class="visit">#visitsedona</b>
+				<div class="footer-social">
+					<ul>
+						<li><a class="social-button" href="#">Вконтакте</a></li>
+						<li><a class="social-button" href="#">Фейсбук</a></li>
+						<li><a class="social-button" href="#">Инстаграм</a></li>
+					</ul>
+				</div>
+				<p class="footer-copyright">
+					<b>website by</b> 
+					<a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+						<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Academy">
+					</a>
+				</p>
 			</div>
-			<p class="footer-copyright">
-				<b>website by</b> 
-				<a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1
-					<img src="img/index-logo-academy.svg" width="115" height="41" alt="Логотип Academy">
-				</a>
-			</p>
-		</footer>  
+		</footer>
 	</body>
 </html>
