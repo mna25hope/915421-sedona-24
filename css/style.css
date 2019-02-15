@@ -1,18 +1,16 @@
-html,
-body {
-    min-width: 1200px;	
-}
-
 body {
   padding: 0;
-  margin: 0;
+  margin: auto;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+  background-image: url("../img/background-photo.jpg");
+  background-position:top;
+  background-repeat:no-repeat;
 }
 	
 a {
@@ -25,11 +23,6 @@ h1 {
   line-height: 1.24;
   text-align: center;
   color: #000000;
-  margin: 0;
-  padding: 0;
-  width: 440px;
-  height: 48px;
-  margin-bottom: 35px;
 }
 
 .visually-hidden {
@@ -89,17 +82,14 @@ a.social-button:focus	{
 	/*навигация*/
 	
 .main-header {
-  margin-bottom: 60px;
   padding: 0;
 }
 	
 .main-navigation {
   color: #000000;
-  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1200px;
   margin: auto;
 }
 
@@ -110,30 +100,39 @@ a.social-button:focus	{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
  }
 
 .main-header-logo {
   width: 140px;
   height: 71px;
   position: absolute;
+  right: 530px;
 }
-		
+
 .site-navigation {
   list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   width: 1200px;
+  background-color: #ffffff;
+  margin-bottom: 76px;
 }
 
-.site-navigation-item{
+.site-navigation-item {
+  display: flex;
   width: 239px;
   height: 56px;
- }
-	
+  align-items: center;
+  justify-content: center;
+  }
+ 
+.nav-item2 {
+	margin-right: 245px;
+}
+ 
 .site-navigation a {
   color: #000000; 
 }
@@ -146,8 +145,12 @@ a.social-button:focus	{
   color: rgba(0, 0, 0, 0.3); 
 }
 	
-div.welcome {
-  background-color: #ffffff; 
+.welcome img {
+  margin-bottom: 20px;
+ }
+
+.mask img {
+  vertical-align: bottom;
 }
 
 /*main*/
@@ -155,7 +158,15 @@ div.welcome {
 .container {
   margin: auto;
   width: 1200px;
-  padding: 0px;
+  background-color: #ffffff;
+}
+
+.prime {
+  margin: 0;
+  padding: 0;
+  width: 440px;
+  height: 48px;
+  margin-bottom: 35px;
 }
 
 p.reasons {
@@ -166,6 +177,12 @@ p.reasons {
 
 /*здесь будет разметка блока причин*/
 	
+.search-hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .interest {
   font-size: 30px;
   line-height: 1.2; 
@@ -193,7 +210,6 @@ p.reasons {
   padding-right: 140px;
   padding-top: 33px;
   padding-bottom: 33px;
-  margin: 20px;
 }  
 
 a.map {
@@ -252,12 +268,12 @@ a.map {
 	
 .inner-page {
   margin: auto;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   background-image: url("../img/filter-background.jpg");
-  background-position: 0 0;
-  background-repeat: repeat; 
+  background-position:top;
+  background-repeat:no-repeat;
 }
-
+  
 .inner-page .main-header {
   margin: 0;
   padding; 0;
@@ -266,7 +282,8 @@ a.map {
 .filter {
   display: flex;
   flex-direction: row;
-}
+  background-color: transparent;
+ }
 
 .sorting-name {
   background-color: #ffffff;
