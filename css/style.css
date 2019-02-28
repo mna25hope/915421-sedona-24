@@ -53,6 +53,8 @@ h1 {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   padding: 0;
   width: 1200px;
@@ -113,8 +115,15 @@ a.social-button:focus	{
 	
 .main-header {
   padding: 0;
-}
-	
+ }
+
+.main-header .container {
+  background-image: url("../img/background-photo.jpg");
+  background-position:top;
+  background-repeat:no-repeat;
+  position: relative;
+}  
+  
 .main-navigation {
   color: #000000;
   display: flex;
@@ -123,22 +132,12 @@ a.social-button:focus	{
   margin: auto;
 }
 
-.main-navigation-wrapper {
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-image: url("../img/background-photo.jpg");
-  background-position:top;
-  background-repeat:no-repeat;
-  position: relative;
- }
-
 .main-header-logo {
   width: 140px;
   height: 71px;
   position: absolute;
   right: 530px;
+  top: 0px;
 }
 
 .site-navigation {
@@ -147,9 +146,8 @@ a.social-button:focus	{
   padding: 0;
   display: flex;
   flex-direction: row;
- 
-  background-color: #ffffff;
   margin-bottom: 76px;
+  background-color: #ffffff;
 }
 
 .site-navigation-item {
@@ -431,6 +429,7 @@ a.map {
 /*footer*/
 	
 .main-footer .container {
+  background-color:#ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -496,30 +495,37 @@ a.map {
 	
 .inner-page {
   margin: auto;
-  background-color: #f2f2f2;
+
+}
+  
+.inner-page .main-header .container {
   background-image: url("../img/filter-background.jpg");
   background-position:top;
   background-repeat:no-repeat;
-}
-  
-.inner-page .main-header {
-  margin: 0;
-  padding; 0;
+  position: relative;
+
 }
 
 .inner-page .container {
-  background-color: transparent;
- }
+
+}
 
 .inner-page .site-navigation {
-  margin-bottom: 25px;
+  margin: 0;
+  padding: 0;  
 }
 
 form.filter {
   display: flex;
   flex-direction: row;
-  margin-left: 72px;
- }
+  padding-left: 72px;
+  padding-top: 25px;
+  background-color: transparent;
+  }
+
+.filter{
+
+}
 
 .filter fieldset {
   padding: 0;
@@ -986,6 +992,9 @@ a.button-sort {
   opacity: 1;
 }
 
+a.calendar:focus img {
+  fill: #81b3d2;
+}
 /*.calendar:focus {
   border-color: #e5e5e5;
   background-color: #ffffff;
